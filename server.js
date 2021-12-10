@@ -7,7 +7,7 @@ const helmet = require("helmet")
 const cheerio = require('cheerio')
 const htmlparser = require('htmlparser2')
 const app = express()
-const port = 9000
+const port = process.env.PORT || 5001;
 
 const JSONLD_PATTERN = 'script[type="application/ld+json"]'
 
