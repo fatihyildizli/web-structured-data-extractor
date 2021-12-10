@@ -10,24 +10,26 @@ Supported formats:-
   - RDFa
 
 
+[HEROKU DEPLOYED API ADDRESS](https://structured-data-web.herokuapp.com/)
+
 
 ## [REST ENDPOINTS](#usage)
 
 ```scala
 
 PAGEURL:
-GET -  /url/schemaorg/all/summary?url={PAGEURL}
-GET -  /url/schemaorg/jsonld/summary?url={PAGEURL}
-GET -  /url/schemaorg/rdfa/summary?url={PAGEURL}
-GET -  /url/schemaorg/microdata/summary?url={PAGEURL}
-GET -  /url/schemaorg/meta/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/all/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/jsonld/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/rdfa/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/microdata/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/meta/summary?url={PAGEURL}
 ---
 RAW HTML:
-POST - /html/schemaorg/all/summary
-POST - /html/schemaorg/jsonld/summary
-POST - /html/schemaorg/rdfa/summary
-POST - /html/schemaorg/microdata/summary
-POST -  /html/schemaorg/meta/summary
+POST - https://structured-data-web.herokuapp.com/html/schemaorg/all/summary
+POST - https://structured-data-web.herokuapp.com/html/schemaorg/jsonld/summary
+POST - https://structured-data-web.herokuapp.com/html/schemaorg/rdfa/summary
+POST - https://structured-data-web.herokuapp.com/html/schemaorg/microdata/summary
+POST -  https://structured-data-web.herokuapp.com/html/schemaorg/meta/summary
 ```
 
 
