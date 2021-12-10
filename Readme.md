@@ -27,7 +27,7 @@ POST - /html/schemaorg/all/summary
 POST - /html/schemaorg/jsonld/summary
 POST - /html/schemaorg/rdfa/summary
 POST - /html/schemaorg/microdata/summary
-GET -  /html/schemaorg/meta/summary
+POST -  /html/schemaorg/meta/summary
 ```
 
 
