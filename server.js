@@ -12,7 +12,7 @@ const port = process.env.PORT || 5001;
 
 const JSONLD_PATTERN = 'script[type="application/ld+json"]'
 
-var allowedOrigins = [ "*" ];
+var allowedOrigins = [  "http://localhost:3000/", "https://localhost:3000/", "https://fycrawler.herokuapp.com/", "https://structured-data-web.herokuapp.com/" ];
 var accessLogStream = fs.createWriteStream(
   path.join(__dirname, "server.log"),
   {
