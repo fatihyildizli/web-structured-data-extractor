@@ -9,8 +9,14 @@ Supported formats:-
   - Microdata
   - RDFa
 
-
-[HEROKU DEPLOYED API ADDRESS](https://structured-data-web.herokuapp.com/)
+[![GitHub stars](https://img.shields.io/github/stars/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/network/members)
+[![Total Downloads](https://img.shields.io/packagist/dt/fatihyildizli/web-structured-data-extractor.svg?style=flat-square)](https://packagist.org/packages/fatihyildizli/web-structured-data-extractor)
+![License](https://img.shields.io/github/license/fatihyildizli/web-structured-data-extractor)
+![Code size](https://img.shields.io/github/repo-size/fatihyildizli/web-structured-data-extractor)
+![Top Language](https://img.shields.io/github/languages/top/fatihyildizli/web-structured-data-extractor)
+![Languages](https://img.shields.io/github/languages/count/fatihyildizli/web-structured-data-extractor)
+![Views](https://img.shields.io/github/search/fatihyildizli/web-structured-data-extractor/web-structured-data-extractor)
 
 
 ## [REST ENDPOINTS](#usage)
@@ -40,7 +46,7 @@ Let's try the following text as the `https://www.nytimes.com` in our example. It
 
 #### [Input](#input)
 ```html
-http://localhost:9000/url/schemaorg/all/summary?url=https://www.nytimes.com
+https://structured-data-web.herokuapp.com/url/schemaorg/all/summary?url=https://www.nytimes.com
 ```
 
 #### [Output](#output)
@@ -728,7 +734,7 @@ https://www.freeformatter.com/json-escape.html#ad-output
 
 #### [Input](#input)
 ```html
-http://localhost:9000/html/schemaorg/all/summary
+https://structured-data-web.herokuapp.com/html/schemaorg/all/summary
 POST 
 
 Request Body:
