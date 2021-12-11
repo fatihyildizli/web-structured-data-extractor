@@ -6,21 +6,39 @@ const fs = require("fs")
 const helmet = require("helmet")
 const cheerio = require('cheerio')
 const htmlparser = require('htmlparser2')
+const cors = require("cors");
 const app = express()
 const port = process.env.PORT || 5001;
 
 const JSONLD_PATTERN = 'script[type="application/ld+json"]'
 
+var allowedOrigins = [ "*" ];
 var accessLogStream = fs.createWriteStream(
   path.join(__dirname, "server.log"),
   {
     flags: "a"
   }
 );
+app.use(cors());
 app.use(morgan("combined", { stream: accessLogStream }));
 app.use(helmet());
 app.use(express.urlencoded({ extended: true, limit: '100mb' })); // for The HTTP 413 Payload Too Large handling (Raw HTML).
 app.use(express.json({ limit: '100mb' }))
+
+app.use(
+  cors({
+    origin: function(origin, callback) {
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.indexOf(origin) === -1) {
+        var msg =
+          "The CORS policy for this site does not " +
+          "allow access from the specified Origin.";
+        return callback(new Error(msg), false);
+      }
+      return callback(null, true);
+    }
+  })
+);
 
 /*-- Controllers --*/
 app.get('/url/schemaorg/all/summary', (req, res) => {
