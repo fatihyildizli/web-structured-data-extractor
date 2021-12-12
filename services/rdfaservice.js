@@ -25,8 +25,8 @@ exports.getPropValue = function (tagName, attribs, TYPE, PROP) {
 }
 
 const getAttrNames = () => {
-        let TYPE = 'typeof'
-        let PROP = 'property'
+    let TYPE = 'typeof'
+    let PROP = 'property'
 
     return { TYPE, PROP }
 }
@@ -39,7 +39,7 @@ const getType = (typeString) => {
     }
 }
 
-const constructHandler =()=>{
+const constructHandler = () => {
     let scopes = []
     let tags = []
     let finalScope = {}

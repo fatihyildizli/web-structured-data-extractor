@@ -7,10 +7,11 @@ exports.execute = function (html) {
         const nameKey = Object.keys(elem.attribs).find((attr) => ['name', 'property', 'itemprop', 'http-equiv'].indexOf(attr) !== -1)
         const name = elem.attribs[nameKey]
         const value = elem.attribs['content']
-        if (!metatags[name]) {
+        if (typeof name !== 'undefined') 
+       { if (!metatags[name]) {
             metatags[name] = []
         }
         metatags[name].push(value)
-    })
+    }})
     return metatags
 }

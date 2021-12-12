@@ -1,6 +1,7 @@
 # Web Structured Data Extractor
 
-Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags and its counters.
+Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, [opengraphs](https://ogp.me
+) and its counters.
 
 Supported formats:-
 - All Meta tags
@@ -8,6 +9,13 @@ Supported formats:-
   - JSON-LD
   - Microdata
   - RDFa
+-Opengraph
+
+More info: 
+[Schema.org](http://schema.org/)
+[opengraph](https://ogp.me
+)
+
 
 Usage: **https://fy-crawler.herokuapp.com**
 ![](demo.gif)
@@ -33,6 +41,7 @@ GET -  https://structured-data-web.herokuapp.com/url/schemaorg/jsonld/summary?ur
 GET -  https://structured-data-web.herokuapp.com/url/schemaorg/rdfa/summary?url={PAGEURL}
 GET -  https://structured-data-web.herokuapp.com/url/schemaorg/microdata/summary?url={PAGEURL}
 GET -  https://structured-data-web.herokuapp.com/url/schemaorg/meta/summary?url={PAGEURL}
+GET -  https://structured-data-web.herokuapp.com/url/schemaorg/opengraph/summary?url={PAGEURL}
 ---
 RAW HTML:
 POST - https://structured-data-web.herokuapp.com/html/schemaorg/all/summary
@@ -40,6 +49,7 @@ POST - https://structured-data-web.herokuapp.com/html/schemaorg/jsonld/summary
 POST - https://structured-data-web.herokuapp.com/html/schemaorg/rdfa/summary
 POST - https://structured-data-web.herokuapp.com/html/schemaorg/microdata/summary
 POST - https://structured-data-web.herokuapp.com/html/schemaorg/meta/summary
+POST - https://structured-data-web.herokuapp.com/html/opengraph/meta/summary
 ```
 
 
@@ -63,7 +73,8 @@ https://structured-data-web.herokuapp.com/url/schemaorg/all/summary?url=https://
         "countJsonLd": 2,
         "countMicroData": 0,
         "countRdfa": 0,
-        "countMetaTags": 21
+        "countMetaTags": 21,
+        "countOpengraph":5
     },
     {
         "meta": {
@@ -775,7 +786,8 @@ Request Body:
         "countJsonLd": 2,
         "countMicroData": 0,
         "countRdfa": 0,
-        "countMetaTags": 21
+        "countMetaTags": 21,
+        "countOpengraph":5
     },
     {
         "meta": {

@@ -1,9 +1,10 @@
 const express = require('express')
 var router = express.Router()
 const jsonLdService = require('../services/jsonldservice')
-const metatagsService= require('../services/metatagsservice')
+const metatagsService = require('../services/metatagsservice')
 const microdataService = require('../services/microdataservice')
 const rdfaService = require('../services/rdfaservice')
+const opengraphService = require('../services/opengraphservice')
 
 router.post('/schemaorg/all/summary', (req, res) => {
     try {
@@ -12,18 +13,21 @@ router.post('/schemaorg/all/summary', (req, res) => {
         const jsonLd = jsonLdService.execute(requestedHTML, true)
         const microdata = microdataService.execute(requestedHTML, true)
         const rdfa = rdfaService.execute(requestedHTML, true)
+        const opengraph = opengraphService.execute(requestedHTML, true)
 
         let result = [
             {
                 countJsonLd: Object.keys(jsonLd).length,
                 countMicroData: Object.keys(microdata).length,
                 countRdfa: Object.keys(rdfa).length,
-                countMetaTags: Object.keys(metatags).length
+                countMetaTags: Object.keys(metatags).length,
+                countOpengraph: Object.keys(opengraph).length
             },
             { meta: metatags },
             { jsonLd: jsonLd },
             { microdata: microdata },
-            { rdfa: rdfa }
+            { rdfa: rdfa },
+            { opengraph: opengraph }
         ]
         res.status(200).send(result);
 
@@ -72,5 +76,14 @@ router.post('/schemaorg/rdfa/summary', (req, res) => {
     }
 });
 
+router.post('/schemaorg/opengraph/summary', (req, res) => {
+    try {
+        res.status(200).send(opengraphService.execute(req.body.html, true));
+    }
+
+    catch (err) {
+        res.status(400).send("Bad Request.");
+    }
+});
 
 module.exports = router;
