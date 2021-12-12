@@ -1,4 +1,14 @@
 # Web Structured Data Extractor
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+
+[![GitHub stars](https://img.shields.io/github/stars/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/network/members)
+[![Total Downloads](https://img.shields.io/packagist/dt/fatihyildizli/web-structured-data-extractor.svg?style=flat-square)](https://packagist.org/packages/fatihyildizli/web-structured-data-extractor)
+![License](https://img.shields.io/github/license/fatihyildizli/web-structured-data-extractor)
+![Code size](https://img.shields.io/github/repo-size/fatihyildizli/web-structured-data-extractor)
+![Top Language](https://img.shields.io/github/languages/top/fatihyildizli/web-structured-data-extractor)
+![Languages](https://img.shields.io/github/languages/count/fatihyildizli/web-structured-data-extractor)
+![Views](https://img.shields.io/github/search/fatihyildizli/web-structured-data-extractor/web-structured-data-extractor)
 
 Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, [Opengraphs](https://ogp.me
 ) " and its counters.
@@ -23,14 +33,6 @@ Usage: **https://fy-crawler.herokuapp.com**
 ![](demo.gif)
 
 
-[![GitHub stars](https://img.shields.io/github/stars/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/network/members)
-[![Total Downloads](https://img.shields.io/packagist/dt/fatihyildizli/web-structured-data-extractor.svg?style=flat-square)](https://packagist.org/packages/fatihyildizli/web-structured-data-extractor)
-![License](https://img.shields.io/github/license/fatihyildizli/web-structured-data-extractor)
-![Code size](https://img.shields.io/github/repo-size/fatihyildizli/web-structured-data-extractor)
-![Top Language](https://img.shields.io/github/languages/top/fatihyildizli/web-structured-data-extractor)
-![Languages](https://img.shields.io/github/languages/count/fatihyildizli/web-structured-data-extractor)
-![Views](https://img.shields.io/github/search/fatihyildizli/web-structured-data-extractor/web-structured-data-extractor)
 
 
 ## [REST ENDPOINTS](#usage)
