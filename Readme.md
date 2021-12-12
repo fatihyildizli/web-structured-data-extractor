@@ -1,18 +1,20 @@
 # Web Structured Data Extractor
 
-Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, [opengraphs](https://ogp.me
-) and its counters.
+Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, [Opengraphs](https://ogp.me
+) " and its counters.
 
 Supported formats:-
 - All Meta tags
+- [Opengraphs](https://ogp.me
+)
 - [Schema.org](http://schema.org/) vocabs;
   - JSON-LD
   - Microdata
   - RDFa
--Opengraph
+  
 
 More info: 
-[Schema.org](http://schema.org/)
+[Schema.org](http://schema.org/),
 [opengraph](https://ogp.me
 )
 
