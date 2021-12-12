@@ -9,6 +9,10 @@ Supported formats:-
   - Microdata
   - RDFa
 
+Usage: **https://fy-crawler.herokuapp.com**
+![](demo.gif)
+
+
 [![GitHub stars](https://img.shields.io/github/stars/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/fatihyildizli/web-structured-data-extractor.svg)](https://github.com/fatihyildizli/web-structured-data-extractor/network/members)
 [![Total Downloads](https://img.shields.io/packagist/dt/fatihyildizli/web-structured-data-extractor.svg?style=flat-square)](https://packagist.org/packages/fatihyildizli/web-structured-data-extractor)
