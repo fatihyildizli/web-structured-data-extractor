@@ -13,14 +13,13 @@
 ![Languages](https://img.shields.io/github/languages/count/fatihyildizli/web-structured-data-extractor)
 ![Views](https://img.shields.io/github/search/fatihyildizli/web-structured-data-extractor/web-structured-data-extractor)
 
-Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, [Opengraphs](https://ogp.me
-) " and its counters.
+Extract semantically structured information from any raw HTML or URL, supportted formats \"Microdata, RDFa,JSON-LD, meta tags, Opengraphs and its counters.
 
-Supported formats:-
+**Supported formats:**
 - All Meta tags
-- [Opengraphs](https://ogp.me
-)
-- [Schema.org](http://schema.org/) vocabs;
+- <img src="https://ogp.me/logo.png" width="32" height="32" />  [Opengraphs](https://ogp.me)
+- <img src="https://schema.org/docs/favicon.ico" width="32" height="32" />  Schema.Org vocabs;
+
   - JSON-LD
   - Microdata
   - RDFa
